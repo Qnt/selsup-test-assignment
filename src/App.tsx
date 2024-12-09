@@ -118,6 +118,7 @@ function ParamEditor({
   const [isNewParamFormOpen, setIsNewParamFormOpen] = useState<boolean>(false);
   const [newParamName, setNewParamName] = useState<string>('');
 
+  //@ts-expect-error
   const getModel = (): Model => {
     return model;
   };
